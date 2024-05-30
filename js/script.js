@@ -82,7 +82,7 @@ const global = {
   }
 async function displayMovieDetails(){
  const movieID =window.location.search.split('=')[1];
- 
+ console.log(movieID);
  const movie = await fetchAPIData(`movie/${movieID}`);
 
  const div = document.createElement('div');
